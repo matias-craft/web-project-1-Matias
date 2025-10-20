@@ -4,9 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <style>
+      header {
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 10px;
+      }
+      #home-link {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: rgb(18, 18, 18);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      #home-link:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+      }
+      #about-link {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: rgb(18, 18, 18);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      #about-link:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+      }
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="submit"],
+      input[type="reset"] {
+        padding: 10px 15px;
+        background-color: rgb(18, 18, 18);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+      }
+      h2 {
+        text-align: center;
+        color: red;
+      }
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: rgb(240, 240, 240);
+        color: rgb(0, 0, 0);
+      }
+    </style>
 </head>
 <body>
-    <h1>Sign Up</h1>
+
+    <header>
+        <h1>Sign Up</h1>
+        <a href="index.html" id="home-link">home page</a>
+        <a href="about.html" id="about-link">About this page</a>
+    </header>
+    <h2> Note: this is just a demo form, no data is actually collected.please do not enter any real personal information.
+    </h2>
     <form action="submit_signup.html" method="post">
         <legend>Get more information about these cars by signing up!</legend>
     <label for="name">Name:</label><br>
@@ -39,10 +125,8 @@
     </form>
     <br>
     <br>
-    <h2> Note: this is just a demo form, no data is actually collected.please do not enter any real personal information.
-    </h2>
     <footer>
-        <p>Back to <a href="index.html">home page</a></p>
+        <p>Created by Matias Guzman</p>
     </footer>
 </body>
 </html>
