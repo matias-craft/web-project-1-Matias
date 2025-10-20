@@ -15,7 +15,7 @@
         display: inline-block;
         margin-top: 10px;
         padding: 10px 20px;
-        background-color: rgb(18, 18, 18);
+        background-color: rgb(41, 41, 41);
         color: white;
         text-decoration: none;
         border-radius: 5px;
@@ -28,7 +28,7 @@
         display: inline-block;
         margin-top: 10px;
         padding: 10px 20px;
-        background-color: rgb(18, 18, 18);
+        background-color: rgb(41, 41, 41);
         color: white;
         text-decoration: none;
         border-radius: 5px;
@@ -40,7 +40,7 @@
       form {
         max-width: 400px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 35px;
         border: 1px solid #ccc;
         border-radius: 5px;
       }
@@ -94,20 +94,15 @@
     <h2> Note: this is just a demo form, no data is actually collected.please do not enter any real personal information.
     </h2>
     <form action="submit_signup.html" method="post">
-        <legend>Get more information about these cars by signing up!</legend>
-    <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        
-        <label for="password">Password:</label><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
         <br>
-        <br>
-        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-        <label for="subscribe"> Subscribe to newsletter</label><br>
-        <br>
-        <input type="radio" id="car1" name="car" value="Porsche 911 GT3 RS" checked>
+        <p>Select your favorite car from the options below:</p>
+        <input type="radio" id="car1" name="car" value="Porsche 911 GT3 RS">
         <label for="car1"> Porsche 911 GT3 RS</label><br>
         <input type="radio" id="car2" name="car" value="Nissan GT-R Skyline">
         <label for="car2"> Nissan GT-R Skyline</label><br>
@@ -121,7 +116,6 @@
         <input type="reset" value="Reset">
         <br>
         <br>
-        
     </form>
     <br>
     <br>
